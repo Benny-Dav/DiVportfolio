@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benedicta Davour - Home</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="dark-mode.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="home" class="h-[100vh] w-full flex flex-col ">
+        <nav class="h-full w-[23%] px-4 lg:h-[10%] lg:h-[10vh] lg:flex lg:justify-between lg:items-center lg:px-18 lg:w-full fixed top-0 z-40 lg:z-20 text-black lg:pt-0 pt-8 ">
+            <!-- Logo -->
+            <a href="index.html" class="text-4xl font-bold  lg:mb-0">
+                am<span class="text-[#FADB41]">i</span>
+            </a>
+        
+            <!-- Navigation Links -->
+            <ul class="flex flex-col justify-between mt-[5em] lg:mt-0 lg:flex lg:flex-row lg:justify-between lg:items-center lg:gap-12 gap-32 text-xl font-semibold lg:text-md lg:font-medium">
+                <li>
+                    <a href="index.html" class="hover:text-[#FADB41] transition-colors duration-300">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="hover:text-[#FADB41] transition-colors duration-300">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html" class="hover:text-[#FADB41] transition-colors duration-300">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="hover:text-[#FADB41] transition-colors duration-300">Contact</a>
+                </li>
+            </ul>
+        
+            <!-- Dark Mode Toggle -->
+            <button id="darkModeToggle" class="mt-24 lg:mt-0">
+                <img id="darkModeIcon" src="./assets/night-mode.png" alt="Dark Mode" class="lg:w-8 lg:h-8 cursor-pointer">
+                <img id="lightModeIcon" src="./assets/brightness.png" alt="Light Mode" class="hidden lg:w-8 lg:h-8 cursor-pointer">
+            </button>
+        </nav>
+        
+
+
+        <header class="h-screen pl-[20%] lg:pl-0 lg:w-full flex items-center justify-center relative">
+            <!--  Overlay -->
+            <div id="overlay"
+                class="absolute w-full h-full bg-gradient-to-b from-gray-300 to-gray-300 opacity-30 top-0 left-0"></div>
+
+            <!-- Content -->
+            <div class="relative z-20 text-center flex flex-col items-center gap-6 px-4">
+                <!-- Greeting and Intro -->
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                    Hi there! My name is <span id="headerSpan1"
+                        class="text-[#FADB41] overflow-hidden whitespace-nowrap border-r-2">Benedicta</span>,<br>
+                    and I am a <span id="headerSpan2"
+                        class="text-[#FADB41] overflow-hidden whitespace-nowrap border-r-2">Frontend Developer</span>
+                </h1>
+
+                <!-- Download Button -->
+
+                <button className="">
+                    <a class="px-6 py-4 w-full lg:w-32 rounded-sm border border-[#FADB41] border-2 font-bold text-[#FADB41]"
+                        target="_blank" href="/assets/Benedicta Edinam Ami Davour Resume.pdf"
+                        download="Benedicta_Davour_Resume.pdf" rel="noopener noreferrer">
+                        Download CV
+                    </a>
+                </button>
+
+
+            </div>
+        </header>
+
+
+    </section>
+
+</body>
+
+</html>

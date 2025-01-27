@@ -1,0 +1,29 @@
+<!-- navbar.html -->
+<nav id="navbar" class="h-[10%] flex justify-between items-center lg:px-18 w-full fixed top-0 z-20">
+    <!-- Logo -->
+    <a href="index.html" class="text-4xl font-bold mr-16">
+        am<span class="text-red-500">i</span>
+    </a>
+
+    <!-- Navigation Links -->
+    <ul class="hidden lg:flex items-center gap-12 text-md font-medium">
+        <li>
+            <a href="index.html" class="hover:text-red-500 transition-colors duration-300">Home</a>
+        </li>
+        <li>
+            <a href="about.html" class="hover:text-red-500 transition-colors duration-300">About</a>
+        </li>
+        <li>
+            <a href="portfolio.html" class="hover:text-red-500 transition-colors duration-300">Portfolio</a>
+        </li>
+        <li>
+            <a href="contact.html" class="hover:text-red-500 transition-colors duration-300">Contact</a>
+        </li>
+    </ul>
+
+    <!-- Dark mode toggle -->
+    <button id="darkModeToggle">
+        <img id="darkModeIcon" src="./assets/night-mode.png" alt="Dark Mode" class="w-8 h-8 cursor-pointer">
+        <img id="lightModeIcon" src="./assets/brightness.png" alt="Light Mode" class="hidden w-8 h-8 cursor-pointer">
+    </button>
+</nav>

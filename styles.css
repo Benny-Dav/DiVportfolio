@@ -1,0 +1,72 @@
+body.dark-mode {
+    background-color: #1a1a1a; /* Dark background */
+    color: #F9F9F9;          /* Light text color */
+}
+
+body.dark-mode nav {
+    background-color: #000;  /* Dark navbar */
+    color: #F9F9F9;          /* Navbar text color */
+}
+
+body.dark-mode header{
+    background-color: #1a1a1a; /* Dark background */
+    background-image: none;
+}
+
+body.dark-mode #overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url('./assets/headerBg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), 
+                url('./assets/headerBg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-image: url('./assets/headerBg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #f3f3f3; /* Light background color */
+}
+
+body.dark-mode a {
+    color: #FADB41;          /* Links in dark mode */
+}
+
+.hidden {
+    display: none;
+}
+
+body.dark-mode a:hover {
+    color: #FADB41;
+}
+
+
+#headerSpan1,
+#headerSpan2 {
+    display: inline-block; /* Ensure spans respect width */
+    overflow: hidden;      /* Hide overflowing text */
+    white-space:nowrap;   /* Prevent text wrapping */
+    border-right: 2px solid #F9F9F9;
+    animation: typewriter 2s steps(9) 1s infinite normal, blink 0.8s step-end infinite;
+}
+
+@keyframes typewriter {
+    from {
+        max-width: 0;
+    }
+    to {
+        max-width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

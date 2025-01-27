@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benedicta Davour - About</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="dark-mode.js"></script>
+</head>
+<body>
+    <section id="about" class="h-[100vh] w-full flex flex-col">
+        <!-- Navbar -->
+        <nav class="h-full w-[23%] px-4 lg:h-[10%] lg:h-[10vh] lg:flex lg:justify-between lg:items-center lg:px-18 lg:w-full fixed top-0 z-40 lg:z-30 text-black lg:pt-0 pt-8 ">
+            <!-- Logo -->
+            <a href="index.html" class="text-4xl font-bold  lg:mb-0">
+                am<span class="text-[#FADB41]">i</span>
+            </a>
+        
+            <!-- Navigation Links -->
+            <ul class="flex flex-col justify-between mt-[5em] lg:mt-0 lg:flex lg:flex-row lg:justify-between lg:items-center lg:gap-12 gap-32 text-xl font-semibold lg:text-md lg:font-medium">
+                <li>
+                    <a href="index.html" class="hover:text-[#FADB41] transition-colors duration-300">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="hover:text-[#FADB41] transition-colors duration-300">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html" class="hover:text-[#FADB41] transition-colors duration-300">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="hover:text-[#FADB41] transition-colors duration-300">Contact</a>
+                </li>
+            </ul>
+        
+            <!-- Dark Mode Toggle -->
+            <button id="darkModeToggle" class="mt-24 lg:mt-0">
+                <img id="darkModeIcon" src="./assets/night-mode.png" alt="Dark Mode" class="lg:w-8 lg:h-8 cursor-pointer">
+                <img id="lightModeIcon" src="./assets/brightness.png" alt="Light Mode" class="hidden lg:w-8 lg:h-8 cursor-pointer">
+            </button>
+        </nav>
+
+        <!-- About Section -->
+        <header class="h-screen w-full pl-18 lg:pl-0  flex items-center justify-center relative">
+            <!-- Overlay -->
+            <div id="overlay"
+                class="absolute w-full h-full bg-gradient-to-b from-gray-300 to-gray-300 opacity-30 top-0 left-0"></div>
+
+            <!-- Content -->
+            <div class="w-full h-full z-20 flex justify-center items-center">
+                <div class="w-[80%] flex flex-col lg:flex-row gap-4 h-auto lg:h-[60%] border px-4 py-4">
+                    <!-- Image Section -->
+                    <div class="w-full lg:w-2/5 relative flex flex-col items-center">
+                        <img src="./assets/hero6.jpeg" alt="" class="w-full h-auto lg:h-full object-cover">
+                        <!-- Social Media Links Box -->
+                        <div class="absolute lg:mt-[-7%] lg:left-[20%] lg:w-[60%] lg:h-14 lg:flex bg-white bg-opacity-80 items-center justify-around shadow-lg rounded-lg border-2 border-[#FADB41] 
+                            w-[90%] h-12 mt-4 flex lg:static">
+                            <!-- Social media links with icons -->
+                            <a href="http://www.linkedin.com/in/eba-davour" target="_blank" class="flex items-center hover:scale-150">
+                                <img src="./assets/linkedin.png" alt="LinkedIn" class="w-6 h-6">
+                            </a>
+                            <a href="https://github.com/Benny-Dav" target="_blank" class="flex items-center hover:scale-150">
+                                <img src="./assets/github.png" alt="GitHub" class="w-8 h-8">
+                            </a>
+                            <a href="https://benedictadavour.netlify.app/" target="_blank" class="flex items-center hover:scale-150">
+                                <img src="./assets/web.png" alt="Website" class="w-6 h-6">
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Text Section -->
+                    <div class="flex-grow flex flex-col items-center justify-center gap-6 px-6">
+                        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                            About Me
+                        </h1>
+                        <p class="text-lg max-w-2xl text-center">
+                            I'm Benedicta Davour, a passionate Frontend Developer dedicated to crafting engaging and user-friendly web experiences. With a strong foundation in HTML, Tailwind CSS, React, and JavaScript, I aim to deliver high-quality and visually appealing solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </header>
+    </section>
+</body>
+</html>
