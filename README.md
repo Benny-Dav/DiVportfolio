@@ -32,11 +32,11 @@ Follow these steps to clone and run the project locally:
 
 1. Clone the Repository:
 
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/Benny-Dav/DiVportfolio.git
 
 2. Navigate to the Project Directory:
 
-cd your-repo-name  
+cd your-repo-name  eg: cd DiVportfolio
 
 3. Open the index.html File:
 Open the index.html file in your browser by going live to view the project.
